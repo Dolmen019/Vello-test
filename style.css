@@ -1,0 +1,202 @@
+:root {
+    --bg-black: #2F2F2F;
+    --bg-white: #F2EDE7;
+    --grid-black: #57595B;
+    --grid-white: #DED7CE;
+    --main-color: #A8DF8E;
+}
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('Inter Black 900.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    font-family: 'MinhaFonte', sans-serif;
+}
+
+body {
+    background-color: var(--bg-black);
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--main-color);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.logo-total {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.text-logo {
+    color: var(--bg-black);
+    font-size: 5rem;
+    margin: 0;
+    line-height: 0.7;
+    letter-spacing: -4px;
+    text-transform: uppercase;
+}
+
+.logo img {
+    height: 75px;
+    width: auto;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    gap: 2.5rem;
+    margin: 0 auto;
+    /* Isso centraliza a navbar entre os outros elementos */
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--bg-black);
+    text-transform: lowercase;
+}
+
+.navbar a:hover {
+    color: var(--bg-white);
+}
+
+.color-mode {
+    background: transparent;
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    color: var(--bg-black);
+    width: 150px;
+    /* Largura fixa para equilibrar com a largura da logo na esquerda */
+    justify-content: flex-end;
+}
+
+.home-container {
+    padding-top: 160px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-black);
+}
+
+.grid-layout {
+    display: grid;
+    /* Três colunas: a primeira é o dobro das outras */
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 25px;
+    width: 95%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Base para os Cards */
+.card {
+    background-color: #434547;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Coluna de Notícias */
+.noticias-card {
+    min-height: 450px;
+    justify-content: space-between;
+}
+
+.setas-grupo {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    color: var(--bg-white);
+}
+
+.titulo-card {
+    font-size: 2.8rem;
+    color: var(--bg-white);
+    font-weight: 900;
+}
+
+/* Colunas Flexíveis (2 e 3) */
+.coluna-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-medio {
+    flex: 2;
+    /* Ocupa mais espaço que os botões */
+}
+
+.titulo-medio {
+    font-size: 1.8rem;
+    color: var(--bg-white);
+    font-weight: 900;
+}
+
+/* Botões Estilizados */
+.btn-acao {
+    flex: 0.8;
+    border-radius: 40px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.btn-acao.verde {
+    background-color: var(--main-color);
+    color: var(--bg-black);
+}
+
+.btn-acao span {
+    color: var(--bg-white);
+    font-size: 1.4rem;
+}
+
+/* Botões de Ícones (Engrenagem e Carta) */
+.btn-icon {
+    height: 60px;
+    background-color: #434547;
+    border-radius: 50px;
+    color: var(--bg-white);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.destaque-verde {
+    color: var(--main-color);
+}

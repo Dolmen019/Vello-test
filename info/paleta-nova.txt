@@ -1,0 +1,7 @@
+--green: #A8DF8E;
+--green-soft: #C7EFCF;
+--bg-dark: #2F2F2F;
+--bg-mid: #3A3A3A;
+--bg-card: #404040;
+--text-main: #E6E6E6;
+--text-muted: #BDBDBD;
